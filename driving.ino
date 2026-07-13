@@ -36,11 +36,11 @@ const int POT = A5;
 const int STEERING_SPEED = 150;
 
 // 주행 PWM
-const int DRIVE_SPEED = 200;
+const int DRIVE_SPEED = 205;
 
 // 포텐셔미터 실제 끝값
 const int RESISTANCE_MOST_LEFT = 630;
-const int RESISTANCE_MOST_RIGHT = 460;
+const int RESISTANCE_MOST_RIGHT = 465;
 
 // 조향 명령 범위
 const int MAX_STEERING_STEP = 10;
