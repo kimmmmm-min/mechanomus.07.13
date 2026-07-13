@@ -52,7 +52,7 @@ class LaneDetector(Node):
         )
         # 조향 규격 (driving.ino / CheckSteering.ino와 일치)
         self.declare_parameter("target_lane", 2)          # 참조/주행 차선
-        self.declare_parameter("lookahead_ratio", 0.95)    # 조향 기준 세로 위치(0=위/먼 곳, 1=아래/코앞)
+        self.declare_parameter("lookahead_ratio", 0.93)    # 조향 기준 세로 위치(0=위/먼 곳, 1=아래/코앞)
         self.declare_parameter("max_steering_step", 10)   # driving.ino MAX_STEERING_STEP
         self.declare_parameter("steering_gain", 0.03)     # 오프셋(px) → 단계 변환 게인(트랙에서 튜닝)
         self.declare_parameter("steering_sign", 1)        # +면 (차선이 오른쪽)→우측(+), 방향 반대면 -1
@@ -431,5 +431,4 @@ def main(args=None):
 
 if __name__ == "__main__":
     main()
-
 
